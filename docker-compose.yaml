@@ -1,0 +1,15 @@
+# docker-compose.yaml
+version: '3.9'
+services:
+  fastapi:
+    build: .
+    ports:
+      - "8000:8000"
+  streamlit:
+    image: python:3.11
+    volumes:
+      - .:/app
+    working_dir: /app/streamlit_app
+    command: streamlit run main.py
+    ports:
+      - "8501:8501"

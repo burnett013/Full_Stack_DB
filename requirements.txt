@@ -1,0 +1,5 @@
+streamlit==1.32.0
+pandas==2.2.1
+sqlite3       # (builtin, doesn't need to be listed)
+python-dotenv # optional if you use env vars
+openpyxl==3.1.2      # for Excel support
